@@ -16,7 +16,7 @@ public:
     int singleNumber(int A[], int n) {
         int x=A[0];
         for(int i=1;i<n;i++)        
-            x ^=A[i];
+            x ^=A[i];//异或可以将出现次数为偶数的清零
         return x;
     }
 };
